@@ -1,5 +1,6 @@
 ## Calculator JSX
-#### This is a simple calculator app build with React
+#### This is a simple calculator app where you can do basic arithmetic calculations.
+#### The app is build with React.
 
 ## Available Scripts
 
