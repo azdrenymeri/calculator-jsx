@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.Display {
+  padding: 16px;
+}
+
+.Display-input {
+  height: 30px;
+  width: 350px;
+  font-size: 20px;
+  padding: 0 5px 0 5px;
+}
+
+.Button {
+  height: 36px;
+  font-size: 22px;
+}
