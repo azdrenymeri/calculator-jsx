@@ -1,19 +1,45 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
-
 .Display {
+  display: flex;
   padding: 16px;
+  align-items: center;
+  justify-content: center;
 }
-
 .Display-input {
+  display: flex;
   height: 30px;
-  width: 350px;
+  width: 20%;
   font-size: 20px;
   padding: 0 5px 0 5px;
 }
 
+.ButtonPanel {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.ButtonPanel-Groups{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+
+}
+.ButtonPanel-Group {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
 .Button {
-  height: 36px;
-  font-size: 22px;
+  display: inline-block;
+  height: 46px;
+  width: 22%;
+  font-size: 20px;
+  margin: 3px;
+  text-align: center;
 }
