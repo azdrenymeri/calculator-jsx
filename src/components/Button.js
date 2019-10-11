@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import PropTypes from 'prop-types';
 
 class Button extends Component {
     // eslint-disable-next-line no-useless-constructor
@@ -14,6 +14,10 @@ class Button extends Component {
             </button>
         )
     }
+}
+
+Button.propTypes = {
+    name: PropTypes.string.isRequired
 }
 
 export default Button;
