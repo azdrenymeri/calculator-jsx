@@ -38,7 +38,8 @@
 .Button {
   display: inline-block;
   height: 46px;
-  width: 22%;
+  /* width: 22%; */
+  order: 1;
   font-size: 20px;
   margin: 3px;
   text-align: center;

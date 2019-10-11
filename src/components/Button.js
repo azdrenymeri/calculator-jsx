@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 
-
 class Button extends Component {
     // eslint-disable-next-line no-useless-constructor
     constructor(props){
