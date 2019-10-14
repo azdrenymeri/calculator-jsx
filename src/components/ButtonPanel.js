@@ -16,7 +16,7 @@ class ButtonPanel extends Component {
                         <Buton name="7" />
                         <Buton name="8" />
                         <Buton name="9" />
-                        <Buton name="X" />
+                        <Buton name="x" />
                     </div>
                     <div className="ButtonPanel-Group">
                         <Buton name="4" />
