@@ -17,3 +17,5 @@ const operate = (numberOne, numberTwo, operator) => {
             return "Error";
     }
 }
+
+export default operate;
