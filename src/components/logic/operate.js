@@ -1,21 +1,27 @@
 import Big from 'big-js';
 
 const operate = (numberOne, numberTwo, operator) => {
+    const a = (numberOne)? new Big(numberOne) : 0;
+    const b = (numberTwo)? new Big(numberTwo) : 0;
 
+    let res;
     switch(operator) {
         case '+':
-            return new Big(numberOne + numberTwo);
+            res = a.plus(b);
+            break;
         case '-':
-            return new Big(numberOne - numberTwo);
+            res =  a.minus(b);
+            break;
         case 'x':
-            return new Big(numberOne * numberTwo);
+            res = a.times(b);
+            break;
         case '÷':
-            return new Big(numberOne / numberTwo);
-        case '%':
-            return new Big(numberOne % numberTwo);
+            res = a.div(b);
+            break;
         default:
-            return "Error";
+            res = 'Error';
     }
+    return res.toString();
 }
 
 export default operate;
