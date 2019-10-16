@@ -8,16 +8,25 @@ class Button extends Component {
     }
 
     render(){
+        const buttonStyle = {
+            backgroundColor: this.props.color,
+            width: this.props.wide ? "50%":"25%"
+        };
+
         return(
-            <button className="Button">
+            <button className="Button" style={buttonStyle}>
                 {this.props.name}
             </button>
         )
     }
 }
-
+Button.defaultProps = {
+    color: 'f5913e'
+}
 Button.propTypes = {
-    name: PropTypes.string.isRequired
+    name: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    wide: PropTypes.bool.isRequired
 }
 
 export default Button;
