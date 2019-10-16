@@ -20,7 +20,9 @@ class Button extends Component {
         )
     }
 }
-
+Button.defaultProps = {
+    color: 'f5913e'
+}
 Button.propTypes = {
     name: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
