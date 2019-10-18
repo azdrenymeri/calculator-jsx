@@ -1,9 +1,12 @@
 import Big from 'big-js';
 
 const operate = (numberOne, numberTwo, operator) => {
-    const a = (numberOne)? new Big(numberOne) : 0;
-    const b = (numberTwo)? new Big(numberTwo) : 0;
-
+    const a = numberOne? new Big(numberOne) : 0;
+    const b = numberTwo? new Big(numberTwo) : 0;
+    
+    console.log('first number: '+a);
+    console.log('second number: '+b);
+    
     let res;
     switch(operator) {
         case '+':
@@ -19,8 +22,10 @@ const operate = (numberOne, numberTwo, operator) => {
             res = a.div(b);
             break;
         default:
-            res = 'Error';
+            res = a == 0 ? b:a;
+            break;
     }
+    
     return res.toString();
 }
 
