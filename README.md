@@ -2,9 +2,18 @@
 #### This is a simple calculator app where you can do basic arithmetic calculations.
 #### The app is build with React.
 
+
+### How to run
+
+### `npm install`
+
+Installs project dependencies. then run any scripts below.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
+
 
 ### `npm start`
 
