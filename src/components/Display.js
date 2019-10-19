@@ -12,7 +12,7 @@ class Display extends Component {
     render(){
         return (
             <div className="Display">
-                <input type="text" className="Display-input" value={this.props.result} />
+                <div type="text" className="Display-input"> {this.props.result} </div>
             </div>
         );
     }
