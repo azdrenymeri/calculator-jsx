@@ -19,7 +19,7 @@ const calculate = (calculatorObj, buttonName) => {
             }
             break;
         case 'AC':
-            calculatorObj.total = "0";
+            calculatorObj.total = null;
             calculatorObj.next = null;
             calculatorObj.operation = null;
             break;
@@ -39,11 +39,18 @@ const calculate = (calculatorObj, buttonName) => {
             calculatorObj.operation = null;
             break;
         default:
-            if(next !== '0' && next){
-                calculatorObj.next += buttonName;
-            } else {
-                calculatorObj.next = buttonName;
+            if(!operation){
+                console.log(` operation ${calculatorObj}`);
+                if (!next) {
+                    calculatorObj.total = calculatorObj.next;
+                }
             }
+
+            if(next !== '0' && next){
+                    calculatorObj.next += buttonName;
+                } else {
+                    calculatorObj.next = buttonName;
+                }
     }
     console.log(calculatorObj)
     return calculatorObj;

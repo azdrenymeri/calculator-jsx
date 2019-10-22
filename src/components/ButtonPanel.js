@@ -15,7 +15,7 @@ function ButtonPanel(props){
                         <Buton name="7" color="#e0e0e0" wide={false} clickHandler={props.clickHandler} />
                         <Buton name="8" color="#e0e0e0" wide={false} clickHandler={props.clickHandler} />
                         <Buton name="9" color="#e0e0e0" wide={false} clickHandler={props.clickHandler}/>
-                        <Buton name="x"  wide={false}/>
+                        <Buton name="x"  wide={false} clickHandler={props.clickHandler}/>
                     </div>
                     <div className="ButtonPanel-Group">
                         <Buton name="4" color="#e0e0e0" wide={false} clickHandler={props.clickHandler}/>

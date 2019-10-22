@@ -19,7 +19,11 @@ const operate = (numberOne, numberTwo, operator) => {
             res = a.times(b);
             break;
         case '÷':
-            res = a.div(b);
+            if(a.toString() === '0'){
+                res = '0';
+            }else {
+                res = a.div(b);
+            }
             break;
         default:
             res = a == 0 ? b:a;
