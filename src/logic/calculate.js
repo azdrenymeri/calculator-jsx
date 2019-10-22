@@ -26,6 +26,10 @@ const calculate = (calculatorObj, buttonName) => {
         case '+/-':
             if(next){
                 calculatorObj.next = operate('-1', next, 'x');
+            } else {
+                if(!operation) {
+                    calculatorObj.total = operate('-1', total, 'x');
+                }
             }
             break;
         case '%':
