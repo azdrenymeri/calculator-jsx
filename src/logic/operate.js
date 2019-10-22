@@ -3,10 +3,6 @@ import Big from 'big-js';
 const operate = (numberOne, numberTwo, operator) => {
     const a = numberOne? new Big(numberOne) : 0;
     const b = numberTwo? new Big(numberTwo) : 0;
-    
-    console.log('first number: '+a);
-    console.log('second number: '+b);
-    
     let res;
     switch(operator) {
         case '+':

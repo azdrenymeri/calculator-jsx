@@ -40,7 +40,6 @@ const calculate = (calculatorObj, buttonName) => {
             break;
         default:
             if(!operation){
-                console.log(` operation ${calculatorObj}`);
                 if (!next) {
                     calculatorObj.total = calculatorObj.next;
                 }
@@ -52,7 +51,6 @@ const calculate = (calculatorObj, buttonName) => {
                     calculatorObj.next = buttonName;
                 }
     }
-    console.log(calculatorObj)
     return calculatorObj;
 }
 
