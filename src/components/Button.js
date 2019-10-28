@@ -14,7 +14,7 @@ class Button extends Component {
         };
 
         return(
-            <button className="Button" style={buttonStyle}>
+            <button className="Button" onClick={this.props.clickHandler} style={buttonStyle}>
                 {this.props.name}
             </button>
         )
