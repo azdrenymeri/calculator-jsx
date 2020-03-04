@@ -1,0 +1,55 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  width: 700px;
+}
+.Display {
+  display: flex;
+  padding: 10px 10px 0 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Display-input {
+  height: 100px;
+  width: 700px;
+  font-size: 36px;
+  padding: 0 5px 0 5px;
+  text-align: right;
+  vertical-align: middle;
+  line-height: 90px;
+  background-color: #858694;
+  color: transparent;
+  text-shadow: 0 0 0 white;
+}
+.ButtonPanel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px 10px 10px;
+}
+.ButtonPanel-Groups{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+
+}
+.ButtonPanel-Group {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: 100px;
+}
+.Button {
+  display: inline-block;
+  height: 100px;
+  width: 25%;
+  order: 1;
+  font-size: 22px;
+  text-align: center;
+  background-color: orange;
+  outline: none;
+}
